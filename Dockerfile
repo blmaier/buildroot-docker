@@ -1,6 +1,7 @@
 FROM registry.fedoraproject.org/fedora:40
 LABEL maintainer="Brandon Maier <brandon.maier@gmail.com>"
-LABEL description="Container with everything needed to run Buildroot"
+LABEL description="Container with everything needed to run Buildroot on Fedora"
+LABEL url="https://github.com/blmaier/buildroot-docker"
 
 RUN dnf upgrade -y && \
 	dnf install -y --setopt=install_weak_deps=False \
