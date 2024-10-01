@@ -1,0 +1,7 @@
+services:
+  fedora:
+    image: docker.io/soldierc4/buildroot-fedora:40
+    build:
+      context: ./fedora
+      tags:
+        - docker.io/soldierc4/buildroot-fedora:latest
