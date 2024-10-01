@@ -2,7 +2,7 @@
 
 Docker image for running Buildroot on a Fedora distro.
 
-## Building
+## Build Docker image
 
 Build using docker-compose or podman-compose. To build and tag run the following.
 
@@ -10,9 +10,11 @@ Build using docker-compose or podman-compose. To build and tag run the following
 podman compose build
 ```
 
-## Pushing
+## Push Docker image
 
-To push to the Docker registry, run the following.
+To push to the Docker registry, run the following. Note the default images are
+tagged for my Docker account so you will need to update the compose.yaml tags
+to point to your repo.
 
 ```
 podman login -u <username> -p <api-password> docker.io
