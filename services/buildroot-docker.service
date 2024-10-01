@@ -1,0 +1,8 @@
+[Unit]
+Description=Build the Buildroot Docker images
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/podman compose -f ${DOCKER_COMPOSE_FILE} build --pull --no-cache
+ExecStart=/usr/bin/podman compose -f ${DOCKER_COMPOSE_FILE} push
+ExecStartPost=/usr/bin/podman image prune -f
