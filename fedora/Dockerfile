@@ -18,6 +18,7 @@ RUN dnf upgrade -y && \
 		file \
 		findutils \
 		g++ \
+		gawk \
 		gcc \
 		git \
 		git-lfs \
