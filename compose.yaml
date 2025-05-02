@@ -1,6 +1,6 @@
 services:
   fedora:
-    image: docker.io/soldierc4/buildroot-fedora:40
+    image: docker.io/soldierc4/buildroot-fedora:42
     build:
       context: ./fedora
       tags:
