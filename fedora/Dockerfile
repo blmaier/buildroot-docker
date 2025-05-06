@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora:42
+FROM quay.io/fedora/fedora:42
 LABEL maintainer="Brandon Maier <brandon.maier@gmail.com>"
 LABEL description="Container with everything needed to run Buildroot on Fedora"
 LABEL url="https://github.com/blmaier/buildroot-docker"
