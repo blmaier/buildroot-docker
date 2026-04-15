@@ -3,6 +3,12 @@ services:
     image: docker.io/soldierc4/buildroot-fedora:42
     build:
       context: ./fedora-42
+
+  fedora-43:
+    image: docker.io/soldierc4/buildroot-fedora:43
+    build:
+      context: ./fedora-43
+
   fedora:
-    extends: fedora-42
+    extends: fedora-43
     image: docker.io/soldierc4/buildroot-fedora:latest
